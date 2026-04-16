@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+ <html lang="en" ng-app="myApp" class="no-js"> 
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>car rental</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/main.css">
+  <link rel="shortcut icon" href="/app/cars/rent.png" >
+  <link rel="stylesheet" href="app.css">
+  <script src="lib/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="voiture/ajoutV.js"></script>
+  <script src="voiture/voiture.js"></script>
+  <script src="clients/ajoutC.js"></script>
+  <script src="clients/clients.js"></script>
+  <script src="clients/mClient.js"></script>
+  <script src="voiture/mvoiture.js"></script>
+  <script src="garage/garage.js"></script>
+  <script src="location/location.js"></script>
+  <script src="location/success.js"></script>
+
+
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+  <style>
+    
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <ul>
+
+        
+        <li><a ng-href="#!/cars"> Voitures</a></li>
+        <li><a ng-href="#!/clients">Clients</a></li>
+        
+        <li><a ng-href="#!/success">Contrat</a></li>
+        <li><a ng-href="#!/location">Location</a></li>
+        
+     
+    </ul>
+</nav>
+
+  <div ng-view></div>
+
+  
+
+ 
+
+ 
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifier Voiture</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="/app/firebase-config.js"></script>
+    <script src="/app/app.js"></script>
+    <script src="/app/voiture/voiture.js"></script>
+    <script src="/app/voiture/ajoutV.js"></script>
+    <script src="/app/voiture/mvoiture.js"></script>
+    <script src="/app/location/location.js"></script>
+
+
+</head>
+
+<body ng-app="myApp" ng-controller="successCtrl">
+    <h1>Success!</h1>
+
+    <p>Location Rented:</p>
+    
+    <ul>
+      <li>Client Numero: {{ rentalData.clientNumero }}</li>
+      <li>Voiture Numero: {{ rentalData.voitureNumero }}</li>
+      <li>Date début: {{ rentalData.startDate }}</li>
+      <li>Heure début: {{ rentalData.startTime }}</li>
+      <li>Kilométrage début: {{ rentalData.startKilometers }}</li>
+      <li>Date fin: {{ rentalData.endDate }}</li>
+      <li>Heure fin: {{ rentalData.endTime }}</li>
+    </ul>
+</body>
+</html>
