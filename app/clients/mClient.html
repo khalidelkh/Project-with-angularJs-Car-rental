@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifier Client</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="/app/firebase-config.js"></script>
+    <script src="/app/app.js"></script>
+    <script src="/app/clients/clients.js"></script>
+    <script src="/app/clients/ajoutC.js"></script>
+    <script src="/app/clients/mClient.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(111, 157, 195);
+            margin-bottom: 70px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        input:hover{
+            background-color: aliceblue;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: rgb(111, 157, 195);
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: #6f686e;
+        }
+    </style>
+</head>
+
+<body ng-controller="editClientCtrl">
+    <h1>Modifier Client</h1>
+    <form>
+        <label>Nom:</label>
+        <input type="text" ng-model="client.nom"><br>
+        <label>Prénom:</label>
+        <input type="text" ng-model="client.prenom"><br>
+        <label>Adresse:</label>
+        <input type="text" ng-model="client.adresse"><br>
+        <label>Numero:</label>
+        <input type="text" ng-model="client.Numero"><br>
+        <button type="button" ng-click="editClient()">Modifier</button>
+    </form>
+
+
+</body>
+
+</html>
